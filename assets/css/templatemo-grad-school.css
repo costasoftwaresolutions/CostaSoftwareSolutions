@@ -153,8 +153,10 @@ a.menu-link { display: none; }
 
 @media screen and (max-width: 1050px) {
   .main-header .logo {
-      padding-left: 30px!important;
+      padding-left: 15px!important;
+      width: 75%;
   }
+
 
   .main-menu {
       padding-right: 30px!important;
@@ -1532,7 +1534,7 @@ section.contact form textarea::placeholder { color: #fff; }
 section.contact form textarea::placeholder { color: #fff; }
 
 section.contact form button {
-    background-color: #f5a425;
+    background-color: #2823b3;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
@@ -1631,4 +1633,20 @@ section.coming-soon .romario img{
 }
 section.coming-soon .romario h4{
   color: #FFF;
+}
+@media screen and (max-width: 840px) {
+  section.coming-soon .romario img{
+    width: 30%;
+    margin-bottom: 4%;
+    margin-top: 10%;
+   }
+   section.coming-soon .row .col{
+    display: block;
+    text-align: center;
+    margin-left: 7%;
+    margin-right:7%;
+   }
+   section.coming-soon .row{
+    margin: 0px;
+   }
 }
