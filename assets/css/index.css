@@ -23,6 +23,7 @@ video::-webkit-media-controls-start-playback-button {
   -webkit-appearance: none!important;
 }
 
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -311,16 +312,23 @@ a.menu-link { display: none; }
   position: relative;
   max-height: 100%;
   overflow: hidden;
-  margin-bottom: -7px;
+  
 }
+.section .main-banner img {
+
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 7px;
+  width:100%;
+}
+
 
 #bg-video {
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     object-fit: cover;
-    z-index: -1;
 }
 
 #bg-video::-webkit-media-controls {
@@ -329,10 +337,10 @@ a.menu-link { display: none; }
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(22, 34, 57, 0.24);
+    background-color: rgba(0, 0, 0, 0.878);
     top: 0;
     left: 0;
-    bottom: 7px;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -389,6 +397,9 @@ a.menu-link { display: none; }
 
   .main-banner .caption h2 {
     font-size: 36px;
+  }
+  .main-banner img {
+    width:400% !important;
   }
 
 }
@@ -523,7 +534,7 @@ section.why-us {
 }
 #tabs ul {
   margin: 0;
-  padding: 0;
+  padding-bottom: 10px;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
@@ -559,8 +570,9 @@ section.why-us {
 @media screen and (max-width: 767px){
   #tabs ul li a {
     
-    font-size: 10px !important;
-    width: 90% !important;
+    font-size: 10px ;
+    padding: 20px;
+    margin: 0px;
 
   }
   #tabs ul .ui-tabs-active a:after {
@@ -605,8 +617,8 @@ section.why-us {
 }
 #tabs ul li a:before {
     transition: all 0.3s;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid transparent;
     background-color: transparent;
     content: '';
@@ -626,8 +638,8 @@ section.why-us {
 }
 #tabs ul .ui-tabs-active a:after {
   background-color: #1976D2;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 #tabs ul .ui-tabs-active a:before {
   border-color: #1976D2;
@@ -879,6 +891,7 @@ section.courses .item .down-content {
     background-color: #fff;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    height: 210px;
 }
 
 section.courses .item .down-content h4 {
@@ -893,6 +906,10 @@ section.courses .item .down-content h4 {
 
 section.courses .item .down-content p {
     margin-bottom: 25px;
+}
+section.courses .item .down-content a {
+    flex: 1;
+    align-self: flex-end;
 }
 
 section.courses .item .down-content img {
@@ -947,7 +964,7 @@ section.courses .owl-carousel button.active {
 /* Video */
 
 section.video {
-    background-image: url(../images/video-bg.jpg);
+    background-image: url(../images/imagem.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
