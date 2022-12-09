@@ -147,7 +147,7 @@ a.menu-link { display: none; }
   }
   nav[role="navigation"] li:hover a,
   nav[role="navigation"] li.active a {
-      color: #4a35d2;
+      color:  #2823b3;
   }
   
   @media screen and (min-width: 951px) {
@@ -206,7 +206,7 @@ a.menu-link { display: none; }
 }
 .main-header .logo a em {
     font-style: normal;
-    color: #4a35d2;
+    color:  #2823b3;
 }
 
 .main-menu {
@@ -288,13 +288,13 @@ a.menu-link { display: none; }
 }
 
 .main-menu li .sub-menu li a:hover {
-    color: #4a35d2;
+    color:  #2823b3;
     border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #4a35d2;
+    border: 2px solid  #2823b3;
 }
 
 @media (max-width: 950px) {
@@ -374,7 +374,7 @@ a.menu-link { display: none; }
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: #4a35d2;
+  color: #2823b3;
   font-weight: 900;
 }
 
@@ -437,7 +437,7 @@ section.features .col-4 {
 }
 
 .features-content:hover {
-    background-color: #4a35d2;
+    background-color:  #2823b3;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
 }
 
@@ -1680,7 +1680,7 @@ section.coming-soon .row{
 }
 section.coming-soon .row .col{
 
-  text-align: center;
+  text-align: justify;
   margin-left: 2%;
   margin-right: 2%;
  }
@@ -1689,15 +1689,15 @@ section.coming-soon .romario span{
   color: #FFF;
 }
 section.coming-soon .romario img{
- width: 50%;
- margin-bottom: 4%;
+ width: 40%;
+ margin-bottom: 12%;
 }
 section.coming-soon .romario h4{
   color: #FFF;
 }
 @media screen and (max-width: 840px) {
   section.coming-soon .romario img{
-    width: 30%;
+    width: 40%;
     margin-bottom: 4%;
     margin-top: 10%;
    }
@@ -1711,3 +1711,22 @@ section.coming-soon .romario h4{
     margin: 0px;
    }
 }
+.work-p{
+  text-align: center;
+  color: #FFF;
+
+}
+.work-p img{
+  width: 75%;
+  margin-bottom: 3.5%;
+}
+.work-p h5{
+  margin-bottom: 8%;
+}
+.work-p img:hover{
+  cursor: pointer;
+}
+.work-p h5:hover{
+  cursor: pointer;
+}
+
