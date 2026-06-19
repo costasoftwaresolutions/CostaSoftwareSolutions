@@ -66,8 +66,9 @@ p {
 }
 
 .main-header .logo img {
-  width: 64px;
+  width: 220px;
   height: auto;
+  vertical-align: middle;
 }
 
 .main-menu {
@@ -248,7 +249,7 @@ section.contact form button:hover {
 
 .hero-metrics {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   max-width: 650px;
   margin-top: 42px;
@@ -675,9 +676,13 @@ section.why-us[data-section="section6"] .section-heading h2 {
   a.menu-link {
     float: right;
     display: block;
-    padding: 20px 24px 0 0;
+    width: 78px;
+    height: 78px;
+    padding: 0;
     color: #fff;
     font-size: 32px;
+    line-height: 78px;
+    text-align: center;
   }
 
   nav[role="navigation"] {
@@ -731,7 +736,7 @@ section.why-us[data-section="section6"] .section-heading h2 {
   }
 
   .hero-section {
-    padding-top: 120px;
+    padding-top: 112px;
   }
 
   .hero-section h1 {
@@ -748,23 +753,61 @@ section.why-us[data-section="section6"] .section-heading h2 {
 }
 
 @media screen and (max-width: 767px) {
+  .main-header {
+    height: 72px;
+  }
+
+  .main-header .logo {
+    line-height: 72px;
+    padding-left: 18px;
+  }
+
   .main-header .logo img {
-    width: 56px;
+    width: 48px;
+  }
+
+  a.menu-link {
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 28px;
+  }
+
+  nav[role="navigation"].active {
+    max-height: calc(100vh - 72px);
   }
 
   .hero-section {
     min-height: auto;
-    padding: 118px 0 70px;
+    padding: 100px 0 58px;
   }
 
   .hero-section h1,
   .section-heading h2,
   .ai-section h2 {
-    font-size: 32px;
+    font-size: 29px;
+    line-height: 1.16;
+  }
+
+  .eyebrow,
+  .section-heading span {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    font-size: 11px;
+    line-height: 1.45;
+    letter-spacing: 1px;
+  }
+
+  .eyebrow::before,
+  .section-heading span::before {
+    flex: 0 0 22px;
+    margin-top: 7px;
   }
 
   .hero-copy {
     font-size: 16px;
+    line-height: 1.65;
   }
 
   .hero-actions,
@@ -779,8 +822,33 @@ section.why-us[data-section="section6"] .section-heading h2 {
     grid-template-columns: 1fr;
   }
 
+  .hero-metrics {
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .hero-metrics div {
+    padding: 14px 16px;
+  }
+
+  .hero-visual {
+    margin-top: 34px;
+    padding: 16px;
+  }
+
+  .dashboard-card {
+    min-height: auto;
+    padding: 18px;
+  }
+
   .dashboard-card.large {
-    min-height: 220px;
+    grid-row: auto;
+    min-height: auto;
+  }
+
+  .dashboard-card strong {
+    margin: 14px 0 8px;
+    font-size: 34px;
   }
 
   .about-section,
@@ -791,10 +859,53 @@ section.why-us[data-section="section6"] .section-heading h2 {
     padding: 72px 0;
   }
 
+  .about-section > .container > .row,
+  .services-section > .container > .row,
+  section.contact > .container > .row {
+    row-gap: 22px;
+  }
+
+  .about-section > .container > .row > [class*="col-"],
+  .services-section > .container > .row > [class*="col-"],
+  section.contact > .container > .row > [class*="col-"] {
+    margin-bottom: 22px;
+  }
+
+  .about-section > .container > .row > [class*="col-"]:last-child,
+  .services-section > .container > .row > [class*="col-"]:last-child,
+  section.contact > .container > .row > [class*="col-"]:last-child {
+    margin-bottom: 0;
+  }
+
   .feature-card,
   .service-card,
   .process-step {
-    margin-bottom: 18px;
+    margin-bottom: 0;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .feature-card,
+  .service-card,
+  .process-step,
+  .contact-panel,
+  section.contact form {
+    padding: 24px;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+    text-align: left;
+  }
+
+  .ai-list {
+    margin-top: 28px;
+  }
+
+  .portfolio-callout {
+    padding: 24px;
   }
 
   .whatsapp-float {
@@ -803,5 +914,24 @@ section.why-us[data-section="section6"] .section-heading h2 {
     width: 52px;
     height: 52px;
     font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero-section h1,
+  .section-heading h2,
+  .ai-section h2 {
+    font-size: 26px;
+  }
+
+  .primary-action,
+  .secondary-action,
+  .portfolio-callout a,
+  .contact-panel a,
+  section.contact form button {
+    width: 100%;
+    padding-right: 14px;
+    padding-left: 14px;
+    font-size: 12px;
   }
 }
